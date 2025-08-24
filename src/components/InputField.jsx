@@ -14,17 +14,19 @@ const InputField = ({ onChange }) => {
   };
 
   return (
-    <div className='flex w-full max-w-sm items-center gap-2'>
-      <Input
-        name='search'
-        className='w-[400px]'
-        placeholder='Hi! How can I help you?'
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <Button onClick={handleSubmit} type='submit' variant='outline'>
-        Send
-      </Button>
+    <div className='flex w-full justify-center'>
+      <div className='flex max-w-sm items-center gap-2'>
+        <Input
+          name='search'
+          className='w-[400px] '
+          placeholder='How can I help you?'
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <Button onClick={handleSubmit} type='submit' variant='outline'>
+          Send
+        </Button>
+      </div>
     </div>
   );
 };

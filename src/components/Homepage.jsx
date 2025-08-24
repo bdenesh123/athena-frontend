@@ -69,10 +69,12 @@ const Homepage = () => {
 
         {/* Typing Indicator */}
         {chatMutation.isPending && (
-          <div className='flex justify-start space-x-1'>
-            <span className='h-2 w-2 animate-bounce rounded-full bg-primary'></span>
-            <span className='h-2 w-2 animate-bounce rounded-full bg-primary delay-150'></span>
-            <span className='h-2 w-2 animate-bounce rounded-full bg-primary delay-300'></span>
+          <div className='flex justify-start'>
+            <div className='flex items-center space-x-1 rounded-xl rounded-bl-none bg-card px-4 py-2 text-card-foreground'>
+              <span className='h-2 w-2 animate-bounce rounded-full bg-primary'></span>
+              <span className='h-2 w-2 animate-bounce rounded-full bg-primary delay-150'></span>
+              <span className='h-2 w-2 animate-bounce rounded-full bg-primary delay-300'></span>
+            </div>
           </div>
         )}
 
