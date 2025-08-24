@@ -15,10 +15,10 @@ const InputField = ({ onChange }) => {
 
   return (
     <div className='flex w-full justify-center'>
-      <div className='flex max-w-sm items-center gap-2'>
+      <div className='flex w-full items-center justify-center gap-2'>
         <Input
           name='search'
-          className='w-[400px] '
+          className='w-full max-w-[400px]'
           placeholder='How can I help you?'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
