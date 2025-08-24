@@ -5,7 +5,7 @@ import useChatMutation from '@/api/useChatMutation';
 const Homepage = () => {
   const [messages, setMessages] = useState([]);
   const chatEndRef = useRef(null);
-  console.log(messages);
+
   const chatMutation = useChatMutation({
     onSuccess: (reply, userMessage) => {
       setMessages((prev) => [
