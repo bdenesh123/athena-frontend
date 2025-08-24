@@ -3,7 +3,7 @@ import Homepage from './components/Homepage';
 function App() {
   return (
     <>
-      <div className='box-border min-h-[100dvh] overflow-hidden'>
+      <div className='box-border min-h-[100dvh]'>
         <Homepage />
       </div>
     </>

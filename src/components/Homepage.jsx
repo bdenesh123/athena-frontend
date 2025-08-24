@@ -33,7 +33,7 @@ const Homepage = () => {
   }, [messages, chatMutation.isPending]);
 
   return (
-    <div className='flex h-screen flex-col bg-background text-foreground'>
+    <div className='flex h-[100dvh] flex-col bg-background text-foreground'>
       {/* Chat Header */}
       <div className='flex items-center border-b border-border p-4'>
         <span className='text-lg font-bold'>
@@ -82,7 +82,7 @@ const Homepage = () => {
       </div>
 
       {/* Input Field */}
-      <div className='flex border-t border-border bg-input p-4'>
+      <div className='sticky bottom-0 border-t border-border bg-input p-4'>
         <InputField onChange={handleInput} />
       </div>
     </div>
